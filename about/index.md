@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About André Ramaciotti
+title: About Me
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: false
-modified: 2015-05-31
+modified: 2015-11-29
 ---
 
 Hey!
 
 My name is André.
-I live in Santa Catarina -- southern Brazil --, and I'm currently employed at Philips Healthcare[^1].
+I live in Florianópolis, Santa Catarina -- southern Brazil --, and I'm currently employed at [Fundação CERTI](http://certi.org.br/)[^1].
 
 [^1]: You know how it goes: this blog is about my own opinion and do not reflect the opinion of my past, present or future employer, yada yada yada.
 
@@ -25,7 +25,7 @@ However, I tend not to focus on a single topic.
 You may find me writing about systems performance one day and about type systems the next day.
 
 I believe programming should be more inviting for everyone, and the least I can do about it is trying to not be a jerk.
-So if you feel I wrote something unappropriate, send me an email, and I'll apologize, edit the post, and watch myself to not do that again.
+So if you feel I wrote something unappropriate, send me an email, and I'll edit the post and watch myself to not do that again.
 
 In my spare time I like to play the guitar.
 I listen mostly to heavy metal, but that's not the only genre I like.
