@@ -18,10 +18,10 @@ Let's start with some Haskell code.
 If you're reading about monads, you probably already know some Haskell, right?
 Ok, so you know we can write a silly function such as this:
 
-{% highlight haskell %}
+```haskell
 silly :: String -> Int -> Int -> Int
 silly s x y = ((length s) * x) + y
-{% endhighlight %}
+```
 
 If, for some reason, we want to separate the steps for computing this function, we can use `let`.
 

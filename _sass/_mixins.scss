@@ -65,6 +65,11 @@
   line-height: 0 + round($doc-line-height / $size*10000) / 10000;
 }
 
+@mixin font-without-line-height($size) {
+  font-size: 0px + $size;
+  font-size: 0rem + $size / $doc-font-size;
+}
+
 @mixin text-overflow() {
   overflow: hidden;
   text-overflow: ellipsis;
