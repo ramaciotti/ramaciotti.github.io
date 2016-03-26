@@ -46,6 +46,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
   enable_coderay: true
 
