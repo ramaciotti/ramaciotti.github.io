@@ -113,8 +113,6 @@ GEM
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.4)
-      ffi (>= 0.5.0)
     rdiscount (2.1.7)
     redcarpet (3.1.2)
     safe_yaml (1.0.4)
@@ -136,7 +134,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  rb-kqueue (>= 0.2)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
