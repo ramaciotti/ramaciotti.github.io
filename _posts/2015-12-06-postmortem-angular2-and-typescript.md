@@ -22,7 +22,7 @@ Which is curious, because `fetch` isn't defined for `window` in TypeScript.
 To solve this, I created an interface that extended from `Window` and had a `fetch` method.
 It's a little cumbersome because you have to cast whenever you want to fetch something, but it works.
 
-{% highlight javascript %}
+```javascript
 interface WindowWithFetch extends Window {
   fetch(url: string, options?: {}): Promise<any>;
 }
@@ -30,13 +30,13 @@ interface WindowWithFetch extends Window {
 (<WindowWithFetch> window).fetch("myClassUrl")
   .then((response: Response) => response.json())
   .then((data: MyClass) => console.log(data));
-{% endhighlight %}
+```
 
 TypeScript also feels leaky when dealing with high-order functions.
 This is caused by `this` having different values depending on the context in JavaScript.
 If you run into this kind of problem, remember: the fat arrow is your friend.
 
-{% highlight javascript %}
+```javascript
 function callAndLog(fn: any) {
   console.log(fn());
 }
@@ -53,7 +53,7 @@ let e = new Example("example");
 
 // callAndLog(e.getValue) won't do what you might expect.
 callAndLog(() => e.getValue());
-{% endhighlight %}
+```
 
 In conclusion, I feel it's already possible to use Angular 2, at least on small projects.
 There are some issues yet, but none of them make the framework impossible to use.

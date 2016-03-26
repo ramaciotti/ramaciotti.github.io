@@ -25,13 +25,13 @@ silly s x y = ((length s) * x) + y
 
 If, for some reason, we want to separate the steps for computing this function, we can use `let`.
 
-{% highlight haskell %}
+```haskell
 silly :: String -> Int -> Int -> Int
 silly s x y = let a = length s
                   b = a * x
                   c = b + y
                in c
-{% endhighlight %}
+```
 
 We can also transform it into a monadic function by using the `Identity` monad.
 Don't worry so much about what monadic means.
@@ -39,7 +39,7 @@ Think of it as a different syntax for Haskell[^fn1].
 
 [^fn1]: Generally people don't use braces and semi-colons in Haskell, but I think it makes it easier to understand what I'm trying to show.
 
-{% highlight haskell %}
+```haskell
 import Control.Monad.Identity
 
 silly :: String -> Int -> Int -> Identity Int
@@ -49,7 +49,7 @@ silly s x y = do {
   c <- return $ b + y;
   return c;
 }
-{% endhighlight %}
+```
 
 Behold, however, for these are no ordinary semicolons!
 They work as some sort of macro expansion.
