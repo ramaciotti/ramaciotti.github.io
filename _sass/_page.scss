@@ -109,6 +109,7 @@ body {
 	height: 200%;
 	min-height: 400px;
 	overflow: hidden;
+    background: linear-gradient(15deg, #1f1f41, #6d3455);
 	&:after {
 		content: '';
 		position: absolute;
