@@ -5,16 +5,16 @@ tags: [functional programming, object-oriented programming, ocaml]
 ---
 
 One of the major guidelines when writing object-oriented programs is the Single Responsibility Principle from SOLID.
-Much to my delight, I don't think object-oriented programming itself follows this rule.
+Much to my delight, object-oriented programming languages in general don't follow this rule.
 
-In object-oriented languages, different concepts end up being represented by the same language constructs:
+In these languages, different concepts end up being represented by the same language constructs:
 classes and inheritance.
 Although this isn't a problem per se, it can be confusing when many of them are being used at the same time.
 It may also make it harder to teach object-oriented programming to someone for the first time.
 
 In this article, I'll show how almost all of these concepts can be represented without depending on classes and inheritance.
 Although I'm using OCaml, I'm not trying to convince anybody that functional programming is better.
-The idea here is to show that these concepts are actually unrelated, so you can better notice when they're being mixed.
+My intention here is to show that these concepts are actually unrelated, so you can better notice when they're being mixed.
 
 
 ## Encapsulation
@@ -47,7 +47,7 @@ val touch : t -> string -> t
 val to_list : t -> (string * int) list
 ```
 
-This can be done in C, too, even though it has no concept of modules.
+This can be done in C, too, even though it has no explicit concept of modules.
 A partial translation of the code above could be present in a `counter.h` file.
 The drawback from this approach is that `counter_t` must always be accessed from a pointer, as the compiler doesn't know its size to allocate it in the stack.
 It is, anyway, a better approach than using `void*` for everything.
@@ -127,3 +127,4 @@ Three common ways to deal with it are the Visitor pattern (from the object-orien
 
 ## Dynamic Dispatch
 
+Finally, something that is
