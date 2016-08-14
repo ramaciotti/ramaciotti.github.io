@@ -1,1 +1,6 @@
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+<footer>
+  <h2 class="footer-heading">{{ site.title }}</h2>
+
+  <p>{{ site.description }}</p>
+  <p>Written by <a href="{{ site.pages[0].permalink | prepend: site.baseurl }}">{{ site.pages[0].title }}</a>.</p>
+</footer>

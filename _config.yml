@@ -1,61 +1,14 @@
-title:            André Ramaciotti
-description:      It's all about peace and love and software development stuff.
-disqus_shortname: 
-reading_time:     true
-words_per_minute: 200
-url:              http://ramaciotti.com
+title: Random Blog Title
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: "https://ramaciotti.com"
+github_username: ramaciotti
 
-# Owner/author information
-owner:
-  name:           André Ramaciotti
-  avatar:         avatar.jpg
-  bio:            "A software developer who enjoys playing the guitar and lifting heavy things."
-  email:          andre@ramaciotti.com
-  facebook:       andre.ramaciotti
-  github:         ramaciotti
-  stackexchange:  
-  linkedin:       ramaciotti
-  instagram:      
-  flickr:         
-  tumblr:         
-  google_plus:    
+# Build settings
+markdown: kramdown
 
-background: 
+exclude: ["Gemfile", "Gemfile.lock", "vendor"]
 
-google_analytics:   
-google_verify:      
-bing_verify:         
-
-timezone:    America/Sao_Paulo
-future:      true
-markdown:    kramdown
-gems:
-  - jekyll-sitemap
-  - jekyll-paginate
-sass:
-  sass_dir: _sass
-  style: compressed
-
-permalink:   /:categories/:title/
-
-paginate: 5
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  enable_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "vendor"]
