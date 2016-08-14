@@ -1,10 +1,10 @@
-title: Random Blog Title
+title: Ars Computationis
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Ars Computationis (Art of Computation) is a blog maintained by André
+  Ramaciotti da Silva.  It contains articles on programming, Computer Science,
+  and (maybe) some personal stuff.
 baseurl: ""
-url: "https://ramaciotti.com"
+url: "https://www.ramaciotti.com"
 github_username: ramaciotti
 
 # Build settings
