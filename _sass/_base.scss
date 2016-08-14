@@ -22,9 +22,35 @@ pre, code, tt {
   font-size: 90%;
 }
 
+a {
+  color: #7d4276;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #888888;
+}
+
+header {
+  a, a:visited {
+    color: #212141;
+  }
+}
+
+footer {
+  a:visited {
+    color: #7d4276;
+  }
+}
+
 .copyright {
   text-align: center;
   color: #f0f0f0;
   font-size: 80%;
+
+  a {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
 }
 
