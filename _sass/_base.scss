@@ -5,7 +5,9 @@ html, body {
 body {
   min-height: 100%;
   background: linear-gradient(15deg, #10101e, #2b1220);
-  font-family: 'Alegreya', 'serif';
+  font-family: Cambria, Georgia, serif;
+  font-size: 1.2em;
+  line-height: 1.62em;
 }
 
 .content {
@@ -14,21 +16,21 @@ body {
   border-radius: .2em;
   padding: .5em 2em;
   background: #f0f0f0;
-  color: #333;
+  color: #000;
 }
 
 pre, code, tt {
-  font-family: 'Cutive Mono', 'monospaced';
+  font-family: Consolas, Inconsolata, monospace;
   font-size: 90%;
 }
 
 a {
-  color: #7d4276;
+  color: #693864;
   text-decoration: none;
 }
 
 a:visited {
-  color: #888888;
+  color: #777;
 }
 
 header {
@@ -53,4 +55,3 @@ footer {
     text-decoration: none;
   }
 }
-
