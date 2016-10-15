@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fundamentals: Bloom Filter"
-tags: [fundamentals]
+tags: [c, fundamentals]
 ---
 
 In this *Fundamentals* series, I'll write about some Computer Science concepts that I haven't paid much attention before.
