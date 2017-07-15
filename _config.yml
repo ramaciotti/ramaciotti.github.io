@@ -4,7 +4,7 @@ description: >
   Ramaciotti da Silva.  It contains articles on programming, Computer Science,
   and (maybe) some personal stuff.
 baseurl: ""
-url: "https://ramaciotti.github.io"
+url: "http://www.ramaciotti.com"
 github_username: ramaciotti
 
 # Build settings
