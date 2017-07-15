@@ -7,7 +7,7 @@ tags: [c, fundamentals]
 In this *Fundamentals* series, I'll write about some Computer Science concepts that I haven't paid much attention before.
 For this first one, I wrote a simple [Bloom Filter][BF] based on an article that introduces the concept of [Enhanced Double Hashing][A].
 
-[BF]: https://github.com/ramaciotti/fundamentals/tree/master/bloom
+[BF]: https://github.com/ramaciotti/fundamentals/tree/master/bloom-c
 [A]: http://www.ccs.neu.edu/home/pete/pub/bloom-filters-verification.pdf
 
 The concept behind Bloom Filters is pretty simple (simpler than I thought, actually).
