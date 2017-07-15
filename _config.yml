@@ -4,11 +4,10 @@ description: >
   Ramaciotti da Silva.  It contains articles on programming, Computer Science,
   and (maybe) some personal stuff.
 baseurl: ""
-url: "https://www.ramaciotti.com"
+url: "https://ramaciotti.github.io"
 github_username: ramaciotti
 
 # Build settings
 markdown: kramdown
 
 exclude: ["Gemfile", "Gemfile.lock", "vendor"]
-
