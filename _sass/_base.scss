@@ -51,7 +51,10 @@ header {
 }
 @media screen and (min-width: 54em) { header { padding: 6rem; } }
 @media screen and (min-width: 44em) { header { padding: 4rem; } }
-@media screen and (max-width: 44em) { header { padding: 2rem; } }
+@media screen and (max-width: 44em) {
+    header { padding: 2rem; }
+    ul ul { padding-left: 0; }
+}
 
 .post-meta {
   padding-bottom: 1em;
