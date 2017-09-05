@@ -9,6 +9,14 @@ body {
   line-height: 1.72em;
 }
 
+img.circle {
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+    border: solid 4px white;
+}
+
 .content {
   margin: 0 auto;
   max-width: 35em;
@@ -28,6 +36,9 @@ a {
 }
 a:hover { text-decoration: underline; }
 a:visited { color: #777; }
+
+a.icon { margin: 0 16px }
+a.icon:hover { text-decoration: none; }
 
 header {
   background: linear-gradient(15deg, #16162a, #461d34);

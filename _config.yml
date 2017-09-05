@@ -1,10 +1,9 @@
-title: Ars Computationis
+title: Andre Ramaciotti
 description: >
-  Ars Computationis (Art of Computation) is a blog maintained by André
-  Ramaciotti da Silva.  It contains articles on programming, Computer Science,
-  and (maybe) some personal stuff.
+  Full-Stack Developer since 2010 with experience with C#, Java, and Ruby.
+  B.Sc. Computer Science at FURB and B.Sc. Accounting student at FUMEC.
 baseurl: ""
-url: "http://www.ramaciotti.com"
+url: "https://www.ramaciotti.com"
 github_username: ramaciotti
 
 # Build settings
