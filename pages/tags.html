@@ -1,8 +1,10 @@
 ---
-layout: blog-page
+layout: sidebar
 title: Tags
 permalink: /tags/
 ---
+
+<article>
 
 {% assign tags = site.tags | sort 0 %}
 <ul>
@@ -23,3 +25,5 @@ permalink: /tags/
     {% endfor %}
   </ul>
 {% endfor %}
+
+</article>

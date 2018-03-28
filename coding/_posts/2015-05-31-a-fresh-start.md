@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A fresh start
-tags: [meta]
 ---
 
 Sometime near the end of 2012 I acquired a VPS[^1].
