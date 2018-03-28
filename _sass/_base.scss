@@ -122,8 +122,11 @@ ul.post-list li + li {
 }
 
 p.post-meta {
-    margin-top: -1em;
     color: #574b43;
+}
+
+h2 + p.post-meta {
+    margin-top: -1em;
 }
 
 .flex-container {

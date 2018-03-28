@@ -7,11 +7,11 @@ layout: sidebar
 
   {{ content }}
 
-  <p>
+  <p class="post-meta">
     Tagged under:
     {% assign tags = page.tags | sort 0 %}
     {% for tag in tags %}
-      <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% if forloop.last %}.{% endif %}
+      {{ tag }}{% unless forloop.last %}, {% endunless %}{% if forloop.last %}.{% endif %}
     {% endfor %}
   </p>
 </article>
