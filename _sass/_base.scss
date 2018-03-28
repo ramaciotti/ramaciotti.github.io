@@ -110,6 +110,22 @@ aside ul.social {
     margin-top: 1.8em;
 }
 
+ul.post-list {
+    margin-bottom: 3em;
+    list-style: none;
+    padding: 0;
+    color: #574b43;
+}
+
+ul.post-list li + li {
+    margin-top: .8em;
+}
+
+p.post-meta {
+    margin-top: -1em;
+    color: #574b43;
+}
+
 .flex-container {
     margin: 0;
     min-height: 100%;
@@ -129,6 +145,7 @@ aside ul.social {
     text-align: center;
     border-right: solid 6px #c19e3e;
     box-shadow: -8px 0px 8px 8px #111010;
+    overflow: auto;
 }
 
 .flex-container aside h1, .flex-container aside a {

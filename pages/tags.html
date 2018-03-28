@@ -19,7 +19,7 @@ permalink: /tags/
 
 {% for tag in tags %}
   <h3 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h3>
-  <ul>
+  <ul class="post-list">
     {% for post in tag[1] %}
       <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({{ post.date | date: "%b %-d, %Y" }})</li>
     {% endfor %}
