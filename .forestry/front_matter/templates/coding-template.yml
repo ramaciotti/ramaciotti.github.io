@@ -22,3 +22,5 @@ fields:
   type: datetime
   hidden: false
   default: ''
+pages:
+- _posts/_posts/software-development-and-carpentry.md
