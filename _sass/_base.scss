@@ -32,6 +32,7 @@ blockquote {
     font-style: italic;
     border-left: 3px solid #b2ada9;
     color: #574b43;
+    line-height: 1.7rem;
 }
 
 header {
@@ -58,6 +59,11 @@ footer a {
 
 footer a:visited {
     color: #b2ada9;
+}
+
+p {
+    line-height: 1.7rem;
+    margin: 1.7rem 0;
 }
 
 pre, code, tt {
