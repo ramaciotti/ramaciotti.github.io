@@ -2,7 +2,7 @@
 layout: default
 ---
     <div class="flex-container">
-      <aside>
+      <aside class="flex-container__sidebar">
         <img src="/logo400x400.png" width="80" height="80" title="Andre Ramaciotti" alt="Andre Ramaciotti" />
         <h1>André Ramaciotti</h1>
 
@@ -19,7 +19,7 @@ layout: default
         </ul>
       </aside>
 
-      <section>
+      <section class="flex-container__main-section">
         {{ content }}
         {% include footer.html %}
       </section>
