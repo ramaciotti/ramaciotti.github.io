@@ -16,15 +16,15 @@ After reading some blog posts on [Lobste.rs](https://lobste.rs/), though, I deci
 What I found was actually worse than what I expected.
 
 It has become sort of a meme to make fun of Go for not having generics, for instance, but what would you expect from a language that doesn't even have `enum`s[^1]?
-Error handling felt okay on the small projects that I created while practicing, but I don't think it would be pleasant to `if err != nil {}` all through a larger code base.
-Worse than all of that, though, was the naming convention.
-
-[^1]: I know about type alias + `const` + `iota`, but that doesn't cover everything I expect from an `enum` type.
+I know about type alias + `const` + `iota`, but that doesn't cover everything I expect from an `enum` type.
 Most importantly, it doesn't properly introduce a parent type so you can use `Enum.Value` or `Enum::Value`.
 It just polutes the global (package) namespace with a bunch of `const`s.
 It also bugs me that you need to manually set the type alias and use `iota`.
 How hard would it be to convert `type Color enum { Red; Green; Blue }` into `type Color int; const ( Red = iota, Green, Blue )`?
 Go is a simple language, but simple for whom?
+
+Error handling felt okay on the small projects that I created while practicing, but I don't think it would be pleasant to `if err != nil {}` all through a larger code base.
+Worse than all of that, though, was the naming convention.
 
 On theory, `privateThing` and `PublicThing` look okay.
 Personally, I prefer uppercase for types and lowercase for everthing else, but that sounds acceptable...
