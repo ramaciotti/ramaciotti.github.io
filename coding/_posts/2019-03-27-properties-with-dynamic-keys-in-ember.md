@@ -18,7 +18,7 @@ export default Component.extend({
   model: null,
   propertyName: null,
   
-  value: computed(`model.${propertyName}`, () => {
+  value: computed(`model.${propertyName}`, function() {
     const propertyName = get(this, 'propertyName');
     const value = get(this, `model.${propertyName}`);
     
@@ -47,7 +47,7 @@ export default Component.extend({
   init() {
     const propertyName = get(this, 'propertyName');
     
-    defineProperty(this, 'value', computed(`model.${propertyModel}`, () => {
+    defineProperty(this, 'value', computed(`model.${propertyModel}`, function() {
       return get(this, `model.${propertyName}`);
     });
   }
