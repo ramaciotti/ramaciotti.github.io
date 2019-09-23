@@ -20,7 +20,27 @@ I know about type alias + `const` + `iota`, but that doesn't cover everything I 
 Most importantly, it doesn't properly introduce a parent type so you can use `Enum.Value` or `Enum::Value`.
 It just polutes the global (package) namespace with a bunch of `const`s.
 It also bugs me that you need to manually set the type alias and use `iota`.
-How hard would it be to convert `type Color enum { Red; Green; Blue }` into `type Color int; const ( Red = iota, Green, Blue )`?
+How hard would it be to convert 
+
+```go
+type Color enum {
+  Red
+  Green
+  Blue
+}
+```
+
+into something like
+
+```go
+type Color int
+const (
+  Red = iota,
+  Green,
+  Blue
+)
+```
+
 Go is a simple language, but simple for whom?
 
 Error handling felt okay on the small projects that I created while practicing, but I don't think it would be pleasant to `if err != nil {}` all through a larger code base.
