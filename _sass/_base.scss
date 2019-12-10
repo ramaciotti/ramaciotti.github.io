@@ -144,6 +144,18 @@ pre, code, tt {
     }
 }
 
+p.back {
+    margin-top: -2rem;
+
+    a {
+        color: $gray40;
+
+        &:visited {
+            color: $gray40;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     @include b(main) {
         padding: 2rem;
