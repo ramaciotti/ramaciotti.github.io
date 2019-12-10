@@ -15,12 +15,12 @@ Everything in Go is "simple," for some definition of simple.
 After reading some blog posts on [Lobste.rs](https://lobste.rs/), though, I decided to give it a chance.
 What I found was actually worse than what I expected.
 
-It has become sort of a meme to make fun of Go for not having generics, for instance, but what would you expect from a language that doesn't even have `enum`s[^1]?
+It has become sort of a meme to make fun of Go for not having generics, for instance, but what would you expect from a language that doesn't even have `enum`s?
 I know about type alias + `const` + `iota`, but that doesn't cover everything I expect from an `enum` type.
 Most importantly, it doesn't properly introduce a parent type so you can use `Enum.Value` or `Enum::Value`.
 It just polutes the global (package) namespace with a bunch of `const`s.
 It also bugs me that you need to manually set the type alias and use `iota`.
-How hard would it be to convert 
+How hard would it be to convert
 
 ```go
 type Color enum {
