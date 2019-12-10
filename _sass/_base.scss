@@ -1,7 +1,7 @@
 html {
     margin: 0;
     height: 100%;
-    background-color: $white;
+    background-color: $gray10;
     font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular',
       'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: $black;
@@ -30,35 +30,35 @@ blockquote {
     margin-right: 1.5rem;
     padding-left: 1rem;
     font-style: italic;
-    border-left: 3px solid $light-gray;
-    color: $dark-gray;
+    border-left: 3px solid $gray50;
+    color: $gray80;
     line-height: 1.7rem;
 }
 
 header {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 10rem 2rem;
     animation: 5s scroll infinite linear;
     background: linear-gradient(165deg, $dark-purple, $wine-purple);
     background-size: 100% 400%;
     border-bottom: solid 6px $golden;
-    box-shadow: 0px -8px 8px 8px $black;
+    box-shadow: 0px 1px 3px hsla(0, 0%, 0%, .2);
     text-align: center;
 }
 
 footer {
     margin: 0 auto 2% auto;
     max-width: 25rem;
-    box-shadow: 0px -4px 5px -5px $light-gray;
+    box-shadow: 0px -4px 5px -5px $gray50;
     padding: .5rem 1rem;
-    color: $light-gray;
+    color: $gray50;
     text-align: center;
 
     a {
-        color: $light-gray;
+        color: $gray50;
 
         &:visited {
-            color: $light-gray;
+            color: $gray50;
         }
     }
 }
@@ -75,13 +75,16 @@ pre, code, tt {
 }
 
 @include b(joke) {
-    text-decoration: underline dotted $light-gray;
+    text-decoration: underline dotted $gray50;
     cursor: help;
 }
 
 @include b(main) {
-    max-width: 32em;
-    margin: 2% auto 2% auto;
+    background: $white;
+    box-shadow: 0px 4px 6px hsla(0, 0%, 0%, .2);
+    max-width: 40em;
+    margin: -8rem auto 4rem auto;
+    padding: 4rem;
     text-align: center;
 
     h1 {
@@ -90,7 +93,7 @@ pre, code, tt {
     }
 
     h2 {
-        color: $dark-gray;
+        color: $gray80;
         margin-top: 0;
         margin-bottom: 8%;
     }
@@ -117,7 +120,7 @@ pre, code, tt {
     margin-bottom: 3em;
     list-style: none;
     padding: 0;
-    color: $dark-gray;
+    color: $gray80;
 
     li + li {
         margin-top: .8rem;
@@ -125,7 +128,7 @@ pre, code, tt {
 }
 
 @include b(post-meta) {
-    color: $dark-gray;
+    color: $gray80;
 
     h2 + & {
         margin-top: -1rem;
@@ -177,8 +180,11 @@ pre, code, tt {
     }
 
     @include e(article) {
+        background: $white;
+        box-shadow: 0px 4px 6px hsla(0, 0%, 0%, .2);
         margin: auto;
-        max-width: 32rem;
+        max-width: 40rem;
+        padding: 4rem;
     }
 }
 
@@ -209,6 +215,10 @@ pre, code, tt {
             order: 0;
             width: 100%;
             height: auto;
+        }
+
+        @include e(article) {
+            padding: 2rem;
         }
     }
 }
