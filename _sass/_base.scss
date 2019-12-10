@@ -135,15 +135,6 @@ pre, code, tt {
     }
 }
 
-@include b(card-list) {
-    max-width: 52em;
-    margin: auto;
-
-    h2 {
-        text-align: center;
-    }
-}
-
 p.back {
     margin-top: -2rem;
 
