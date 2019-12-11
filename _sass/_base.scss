@@ -149,6 +149,7 @@ p.back {
 
 @media screen and (max-width: 600px) {
     @include b(main) {
+        border-top: solid 6px $golden;
         padding: 2rem;
     }
 }
