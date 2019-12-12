@@ -81,6 +81,7 @@ pre, code, tt {
 
 @include b(main) {
     background: $white;
+    border-top: solid 6px $golden;
     box-shadow: 0px 4px 6px hsla(0, 0%, 0%, .2);
     max-width: 40em;
     margin: -8rem auto 4rem auto;
@@ -149,7 +150,6 @@ p.back {
 
 @media screen and (max-width: 600px) {
     @include b(main) {
-        border-top: solid 6px $golden;
         padding: 2rem;
     }
 }
